@@ -40,7 +40,8 @@ defmodule Isitstillsnowing.Mixfile do
       {:cowboy, "~> 1.0"},
       {:httpoison, "~> 0.13"},
       {:edeliver, "~> 1.4.3"},
-      {:distillery, "~> 1.4"}
+      {:distillery, "~> 1.4"},
+      {:remote_ip, "~> 0.1.0"}
     ]
   end
 end
