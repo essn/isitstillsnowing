@@ -1,0 +1,16 @@
+main[role="main"] {
+  background-color: black;
+}
+body {
+  background-color: black;
+}
+
+.heading-wrapper {
+  margin-top: 15rem;
+}
+
+.heading {
+  color: white;
+  font-size: 100px;
+  text-align: center;
+}
