@@ -1,6 +1,8 @@
 defmodule IsitstillsnowingWeb.PageController do
   use IsitstillsnowingWeb, :controller
 
+  plug RemoteIp
+
   def index(conn, _params) do
     ip = Tuple.to_list(conn.remote_ip) |> Enum.join(".")
 
