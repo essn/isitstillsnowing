@@ -56,6 +56,6 @@ defmodule Isitstillsnowing.Weather do
       acc ++ item
     end
 
-    %IpInfo{ip_info | snowing: Enum.member?(types, "Snow")}
+    {:ok, %IpInfo{ip_info | snowing: Enum.member?(types, "Snow")}}
   end
 end
