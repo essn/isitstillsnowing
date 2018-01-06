@@ -52,9 +52,7 @@ defmodule Isitstillsnowing.Weather do
 
   defp calculate_is_snowing(err = {:error, _}), do: err
   defp calculate_is_snowing({:ok, ip_info = %IpInfo{}}) do
-    types = Enum.reduce ip_info.weather_list, [], fn(item, acc) ->
-      acc ++ item
-    end
+    types = Enum.map ip_info.weather_list, fn(item) -> item["main"] end
 
     {:ok, %IpInfo{ip_info | snowing: Enum.member?(types, "Snow")}}
   end
