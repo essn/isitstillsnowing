@@ -1,14 +1,4 @@
 <div class="heading-wrapper">
-  <%= if @snowing === true do %>
-    <h1 class="heading">Yep</h1>
-  <% end %>
-
-  <%= if @snowing === false do %>
-    <h1 class="heading">Nope</h1>
-  <% end %>
-
-  <%= if @snowing === nil do %>
-    <h1 class="heading">Maybe</h1>
-  <% end %>
+  <h1 class="heading">Yep</h1>
 </div>
 
